@@ -69,7 +69,7 @@ const shareBandwidthForAllTokens = async () => {
 
     if (tokens.length !== proxies.length) {
         logger('The number of tokens and proxies do not match!', 'error');
-        return;
+        //return;
     }
 
     for (let i = 0; i < tokens.length; i++) {
