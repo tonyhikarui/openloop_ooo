@@ -75,6 +75,7 @@ const shareBandwidthForAllTokens = async () => {
     for (let i = 0; i < tokens.length; i++) {
         const token = tokens[i];
         const proxy = proxies[i];
+        /*
         try {
             const response = await checkMissions(token, proxy);
             if (response && Array.isArray(response.missions)) {
@@ -93,7 +94,7 @@ const shareBandwidthForAllTokens = async () => {
         } catch (error) {
             logger('Error checking missions:', 'error', error);
         };
-
+*/
         try {
             await shareBandwidth(token, proxy);
         } catch (error) {
@@ -102,6 +103,7 @@ const shareBandwidthForAllTokens = async () => {
     }
 };
 const checkMissions = async (token, proxy) => {
+
     try {
         const proxyAgent = new HttpsProxyAgent(proxy);
 
