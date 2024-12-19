@@ -52,7 +52,7 @@ put your proxy in file `proxy.txt` format `http://username:pass@ip:port`
    ```bash
    npm run setup
    ```
-4. Batch get token Run:
+4. Batch get token Run:(accounts.txt Fill in the account information to run directly here)
    ```bash
     node getToken.js
    ```
